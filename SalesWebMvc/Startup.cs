@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Localization;
 using SalesWebMvc.Data;
+using SalesWebMvc.Models;
 using SalesWebMvc.Services;
 using System.Collections.Generic;
 
@@ -43,8 +44,9 @@ namespace SalesWebMvc
                     builder.MigrationsAssembly("SalesWebMvc")));
 
             services.AddScoped<SeedingService>(); // permite que seja injetado em outras classes
-            services.AddScoped<SellerService>(); // permite que seja injetado em outras classes
-            services.AddScoped<DepartmentService>(); // permite que seja injetado em outras classes
+            services.AddScoped<SellerService>(); 
+            services.AddScoped<DepartmentService>();
+            services.AddScoped<SalesRecordService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

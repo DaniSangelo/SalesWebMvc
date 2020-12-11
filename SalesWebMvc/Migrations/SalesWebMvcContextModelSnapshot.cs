@@ -2,10 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-<<<<<<< HEAD
-=======
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
->>>>>>> 4cef76331901bafaf09b4e18ec09a11e417a7f15
 using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Migrations

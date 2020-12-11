@@ -8,10 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Localization;
-<<<<<<< HEAD
 using SalesWebMvc.Data;
-=======
->>>>>>> 4cef76331901bafaf09b4e18ec09a11e417a7f15
 using SalesWebMvc.Models;
 using SalesWebMvc.Services;
 using System.Collections.Generic;
@@ -48,13 +45,8 @@ namespace SalesWebMvc
                     builder.MigrationsAssembly("SalesWebMvc")));
 
             services.AddScoped<SeedingService>(); // permite que seja injetado em outras classes
-<<<<<<< HEAD
             services.AddScoped<SellerService>(); 
             services.AddScoped<DepartmentService>();
-=======
-            services.AddScoped<SellerService>();
-            services.AddScoped<DepartmentService>(); 
->>>>>>> 4cef76331901bafaf09b4e18ec09a11e417a7f15
             services.AddScoped<SalesRecordService>();
         }
 
